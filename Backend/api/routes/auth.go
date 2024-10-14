@@ -13,5 +13,4 @@ func RegisterUserRoutes(router *mux.Router, authController *controllers.AuthCont
 	// Route for handling OTP verification
 	router.HandleFunc("/api/auth/verify", authController.HandleVerification).Methods("POST")
 
-	// Add more routes as needed, e.g., for refreshing tokens, user profile updates, etc.
 }

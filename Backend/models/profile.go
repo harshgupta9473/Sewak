@@ -18,7 +18,7 @@ type CustomerProfile struct {
 	City                    string  `json:"city"`                     // City or region
 	PreferredRadius         float64 `json:"preferred_radius"`         // Distance within which they prefer services (in km)
 	ServiceCategories       string  `json:"service_categories"`       // JSON or comma-separated string of preferred service categories
-	NotificationPreferences string  `json:"notification_preferences"` // Example: JSON for email, SMS preferences
+	NotificationPreferences string  `json:"notification_preferences"` 
 	ContactEmail            string  `json:"contact_email"`
 	FavoriteProviders       string  `json:"favorite_providers"` // Example: JSON list of provider IDs           // JSON or separate table for reviews given by the customer
 

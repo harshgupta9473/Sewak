@@ -11,9 +11,9 @@ type Service struct {
 	ProviderID   uint    `gorm:"not null"`
 	Name         string  `json:"name" gorm:"not null"`
 	Description  string  `json:"description" gorm:"not null"`
-	Price        float64 `json:"price" gorm:"not null"`        // Price per unit/service
+	Price        float64 `json:"price" gorm:"not null"`        
 	Rating       float64 `json:"rating"`       // Average rating of this service
-	Availability string  `json:"availability" gorm:"not null" ` // E.g., "Mon-Fri 9 AM - 5 PM"
+	Availability string  `json:"availability" gorm:"not null" ` // "Mon-Fri 9 AM - 5 PM"
 	Duration     int     `json:"duration"`     // Duration of the service in minutes
 	Visibility   bool    `json:"visible"`
 }
